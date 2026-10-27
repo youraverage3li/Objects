@@ -1,0 +1,29 @@
+class Car:
+    def __init__(self, make, model, mpg):
+        self.make = make
+        self.model = model
+        self.mpg = mpg
+
+def main():
+    car1 = Car("Toyota", "Prius", 35)
+    car2 = Car("Subaru","Outback", 32)
+    car3 = Car("Ford", "F150", 25)
+
+    cars = [car1, car2, car3]
+
+    total_mpg = 0
+
+    for car in cars:
+        total_mpg += car.mpg
+
+    average_mpg = total_mpg / len(cars)
+
+    print(f"Total MPG: {total_mpg}")
+    print(f"Average MPG: {average_mpg}")
+    
+
+    ## Write a program to sum the mpg of each car.
+
+if __name__ == '__main__':
+    main()
+    
